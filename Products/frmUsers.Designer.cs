@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btnReturn = new System.Windows.Forms.Button();
-            this.cboUserName = new System.Windows.Forms.ComboBox();
+            this.cboUsers = new System.Windows.Forms.ComboBox();
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -54,13 +54,13 @@
             this.btnReturn.UseVisualStyleBackColor = true;
             this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
-            // cboUserName
+            // cboUsers
             // 
-            this.cboUserName.FormattingEnabled = true;
-            this.cboUserName.Location = new System.Drawing.Point(12, 12);
-            this.cboUserName.Name = "cboUserName";
-            this.cboUserName.Size = new System.Drawing.Size(378, 21);
-            this.cboUserName.TabIndex = 1;
+            this.cboUsers.FormattingEnabled = true;
+            this.cboUsers.Location = new System.Drawing.Point(12, 12);
+            this.cboUsers.Name = "cboUsers";
+            this.cboUsers.Size = new System.Drawing.Size(378, 21);
+            this.cboUsers.TabIndex = 1;
             // 
             // btnCreate
             // 
@@ -70,6 +70,7 @@
             this.btnCreate.TabIndex = 2;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = true;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // btnEdit
             // 
@@ -79,6 +80,7 @@
             this.btnEdit.TabIndex = 3;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnUpdate
             // 
@@ -88,6 +90,7 @@
             this.btnUpdate.TabIndex = 4;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -97,6 +100,7 @@
             this.btnDelete.TabIndex = 5;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // txtUserName
             // 
@@ -181,7 +185,7 @@
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.cboUserName);
+            this.Controls.Add(this.cboUsers);
             this.Controls.Add(this.btnReturn);
             this.Name = "frmUsers";
             this.Text = "Users";
@@ -194,7 +198,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnReturn;
-        private System.Windows.Forms.ComboBox cboUserName;
+        private System.Windows.Forms.ComboBox cboUsers;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnUpdate;
